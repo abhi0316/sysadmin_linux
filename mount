@@ -1,0 +1,3 @@
+/etc/fstab --- to mount a samba share on startup add this to the fstab file
+
+//192.168.1.20/LinuxGateway /mnt cifs username=shareusername,password=sharepassword,uid=1000,gid=1000,iocharset=utf8,sec=ntlm  0  0
