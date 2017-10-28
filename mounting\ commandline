@@ -1,0 +1,1 @@
+sudo mount.cifs //192.168.1.20/LinuxGateway -o uid=1000,gid=1000,user=username /mnt   -- mounting to mount
