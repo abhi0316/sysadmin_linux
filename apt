@@ -1,2 +1,2 @@
 /var/lib/apt/list : location for apt update. 
-/etc/apt/source.list : endpoints.
+/etc/apt/source.list : endpoints
