@@ -1,0 +1,14 @@
+#Disk quota for each user !
+#Debian
+
+~sudo apt install quota
+
+#/etc/fstab
+    uuid="uuid of a patition"     /mountpoint      partitiontype rw,errors=remount-ro,usrquota  0 1
+#reboot the system
+
+cd /path/to/mountpoint
+sudo edquota -u user
+#set soft limit hard limit for files and blocks.
+sudo quotaon /mountpoint
+sudo repquota /mnt -- for reports on quota
