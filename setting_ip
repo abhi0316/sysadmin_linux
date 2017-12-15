@@ -1,0 +1,8 @@
+sudo ifconfig wlp6s0 down
+sudo ifconfig wlp6s0 up
+ifconfig wlp6s0 192.168.1.1 netmask 255.255.255.0 broadcast 192.168.1.255
+# setting route 
+for local access 
+sudo route add 192.168.1.0 netmask 255.255.255.0 dev wlp6s0
+for accessing internet
+sudo route add default gw 192.168.1.0 dev wlp6s0
