@@ -1,0 +1,40 @@
+sudo apt install apache2
+sudo mkdir /var/www/www.mysite.com/
+sudo nano /etc/apache2/sites-available/www.mysite.com.conf
+
+       <VirtualHost *:80>
+       ServerName : mysite.com
+       ServerAlias: www.mysite.com
+       DocumentRoot: /var/www/www.mysite.com/
+       ErrorLog    : ${APACHE_LOG_DIR}/error.log
+       CustomLog   : ${APACHE_LOG_DIR}/access.log combined 
+       </VirtualHost>
+       
+sudo a2ensite www.mysite.com.conf #enabling my site 
+sudo apache2ctl configtest
+
+sudo service apache restart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
