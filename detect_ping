@@ -1,0 +1,1 @@
+sudo tcpdump -i wlp6s0 icmp and icmp[icmptype]=icmp-echo
