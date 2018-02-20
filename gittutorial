@@ -1,0 +1,19 @@
+#Git 
+
+cloning a git : git clone url
+
+adding files to git : git add <file name>
+
+commit : git commit -m "your commit"
+
+push : git push
+
+status : git status
+
+log : git log
+
+adding remote url : git remote add <url>
+
+creating local	git : git init --bare inside repo.git
+
+
